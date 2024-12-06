@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #101010; 
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #d8b4ff; 
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), 
+              url('background.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 40px;
+}
+
+.main-section h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.main-section p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #b8b8b8;
+  margin-bottom: 30px;
+}
+
+.main-section button {
+  background-color: #d38aff;
+  color: white;
+  font-size: 18px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-section button:hover {
+  background-color: #b072db;
+}
+.sub-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sub-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d38aff;
+}
+.profile-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.profile {
+  text-align: center;
+  color: white;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.profile h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #b8b8b8;
+}
+body {
+  background-image: url('images/background.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 100vh; 
+  margin: 0; 
+}
+
+.testimonial-section {
+  background-color: #a54ef0; 
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.testimonial-container {
+  display: flex; 
+  align-items: center;
+  max-width: 800px;
+  background-color: transparent; 
+  padding: 20px;
+  gap: 20px; 
+  color: white; /
+}
+
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  border: 3px solid white; 
+}
+
+
+.testimonial-content {
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.testimonial-role {
+  font-size: 0.9em;
+  color: #f0f0f0; 
+}
+
+
+
+.popular-tutorials {
+  padding: 20px 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.popular-tutorials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.tutorials {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px; 
+  overflow-x: auto;
+  width: 75%; 
+  margin: 0 auto; 
+}
+
+
+.tutorial {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+.tutorial img {
+  width: 80%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.tutorial h3 {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.tutorial p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.tutorial-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Auteur */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 0.6em;
+  color: #6d0a78;
+}
+
+
+.duration {
+  font-size: 0.7em;
+  color: #6d0a78;
+}
+
+
+.rating img {
+  width: 16px;
+  height: 16px;
+  color: #6d0a78;
+}
+
+
+.play-button {
+  margin-top: 15px;
+  background-color: #6d0a78;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.play-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.play-button:hover {
+  background-color: #6d0a78;
+}
+.free-membership {
+  background-color: #071629;
+  color: #FFFFFF;
+  padding: 40px;
+  text-align: center;
+}
+
+.free-membership h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.member-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.free-membership h3 {
+  font-size: 18px; 
+  margin-bottom: 8px; 
+  color: #333; 
+}
+
+.free-membership h4 {
+  font-size: 14px; 
+  margin-top: 5px; 
+  color: #666; 
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.author h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rating .stars img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.rating p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.register-button {
+  margin-top: 20px; 
+  padding: 12px 24px; 
+  background-color: #C271FF; 
+  color: white; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.register-button:hover {
+  background-color: #C271FF; 
+}
+.FAQ-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9; 
+}
+
+.FAQ-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.row-block {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.item-block {
+  width: 350px; 
+  height: 241px; 
+  background-color: white; 
+  color: black; 
+  padding: 10px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+.item-block h2 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.item-block p {
+  font-size: 0.6em;
+  font-size: 0.9em;
+  line-height: 1.1; 
+}
+footer {
+  background-color: #0B1D2A; 
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-content img {
+  width: 50px; 
+}
+
+.footer-links a {
+  margin: 0 10px;
+}
+
+.footer-links img {
+  width: 30px; 
+  filter: brightness(0) invert(1); 
+  transition: transform 0.3s ease;
+}
+
+.footer-links img:hover {
+  transform: scale(1.2); 
+}
